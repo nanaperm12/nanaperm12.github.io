@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="fetchText();">Request data</button>
+
+<div id="name"></div>
+
+
+<script>
+
+ async function fetchText() {
+    let response = await fetch('http://api.macvendors.com/88:53:2E:67:07:BE');
+
+    console.log(response.status); // 200
+    console.log(response.statusText); // OK
+
+    if (response.status === 200) {
+        let data = await response.text();
+        // handle data
+    }
+}
+
+</script>
+
+</body>
+</html>
