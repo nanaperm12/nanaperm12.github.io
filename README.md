@@ -5,11 +5,11 @@
 - ⚡ Blog : https://www.o-om.com
 - ⚡ Facebook : https://fb.me/nanaperm12
 - ⚡ Twitter : https://twitter.com/nanaperm
-- ⚡ Instagram : https://instagram.com/bnanaperm
+- ⚡ Instagram : https://instagram.com/nanaperm
 - ⚡ linkedin : https://linkedin.com/in/nana-permana
 
 ## :gift_heart: <b>Want to give me a Gift ?</b><br>
-- :link: PAYPAL to https://paypal.me/agusramadhani1<br>
+- :link: PAYPAL to https://paypal.me/nanaperm12<br>
 - :link: Donasi melalui https://saweria.co/buananetpbun
 - :link: Buy me a coffe https://www.buymeacoffee.com/bntpbun
 - :link: Bitcoin to [ <b>bc1qazx09937at9za695m39xzjvqt8tjncgwep4ymf</b> ]
