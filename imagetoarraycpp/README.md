@@ -1,4 +1,4 @@
-## image2cpp
+## imagetoarraycpp
 
 Gunakan alat ini secara online di http://nanaperm12.github.io/imagetoarraycpp/ image2cpp adalah alat sederhana untuk mengubah gambar menjadi array byte (atau array Anda kembali menjadi gambar) untuk digunakan dengan tampilan (monokrom) seperti OLED, seperti itu dari Adafruit atau Sparkfun. Saat mencari cara untuk menghasilkan array ini, saya kebanyakan menemukan tautan ke perangkat lunak Windows. Baik hasil yang tidak jelas dan kerumitan karena harus mem-boot mesin virtual hanya untuk mengonversi gambar membuat saya menulis solusi html + javascript murni ini.
 
