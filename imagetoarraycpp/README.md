@@ -10,13 +10,13 @@ Apakah menurut Anda alat ini berguna? Jangan ragu untuk mendukung perangkat luna
 
 
 ### Running the tool
-You don't need any special dependencies / internet connection; all the necessary parts sit in a single .html file. So just open this index.html page in a (recent) browser to run the tool.
-Or you can use the online version at http://javl.github.io/image2cpp/
+kamu tidak membutuhkan dependencies khusus / koneksi internet ; seluruh bagian terdapaat dalam file html. jadi hanya cukup dengan membukan file index.html  secara langsung di browser
+atau dapat mengunjungi versi online di http://nanaperm12.github.io/imagetoarraycpp/
 
-### Example Arduino code
-You can find a simple Arduino example sketch [over here](https://github.com/nanaperm12/imagetoarraycpp/blob/master/oled_example/oled_example.ino) in the repository.
+### EContoh ardino kode
+kamu dapat menggunakan contoh sketch Arduino [disini](https://github.com/nanaperm12/imagetoarraycpp/blob/master/oled_example/oled_example.ino) di repository.
 
-### Screen types
+### Jenis Layar
 I wrote the code with my 128x64 pixel monochrome OLED display in mind, but it should work with most similar displays. You might need to change some export settings; those are explained in the tool.
 
 ### Credit
