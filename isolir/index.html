@@ -6,7 +6,7 @@
     <title>Halaman Isolir</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
-	    .blink {
+.blink {
   animation: blink 1s infinite;
 }
 
@@ -134,4 +134,12 @@
 
     
   </body>
+<script>
+const blinkText = document.querySelector('h1');
+setInterval(() => {
+  blinkText.style.opacity = blinkText.style.opacity === '1' ? '0' : '1';
+}, 1000);
+	
+</script>
+	
 </html>
