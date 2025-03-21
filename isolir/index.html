@@ -111,6 +111,231 @@
       margin-bottom: 20px;
       border-radius: 70%;
 }
+<!--css button start-->
+.d-1 {
+  --b:4px;   /* border length*/
+  --c:20px;  /* the cube perspective */
+  
+  --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+  
+  
+  padding:8px;
+  transition: 0.5s;
+  border: solid transparent;
+  border-width:var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
+  background:
+    linear-gradient(-45deg,transparent var(--g),rgba(255,255,255,0.6) 0) left  /var(--c) 100%,
+    linear-gradient(135deg,transparent var(--g),rgba(255,255,255,0.3) 0) bottom /100% var(--c),
+    conic-gradient(from -90deg at top var(--b)   right var(--b),currentColor 270deg,transparent 0),
+    conic-gradient(from  90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)),currentColor 270deg,transparent 0) ;
+  background-repeat:no-repeat;
+  background-origin:border-box;
+  transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
+  clip-path: 
+    polygon(var(--c) 0%, var(--c) 0%, 
+    100% 0%, 
+    100% calc(100% - var(--c)),100% calc(100% - var(--c)),
+    var(--c) calc(100% - var(--c)),
+    var(--c) calc(100% - var(--c)));
+}
+.d-1:hover {
+  transform:translate(0,0);
+  clip-path: 
+    polygon(0% var(--c), var(--c) 0%, 
+    100% 0%, 
+    100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
+    0% 100%,0% 100%);
+}
+.d-2 {
+  --b:4px;   /* border length*/
+  --c:20px;  /* the cube perspective */
+  
+  --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+  
+  
+  padding:8px;
+  color:blue;
+  transition: 0.5s;
+  border: solid transparent;
+  border-width:var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b)) var(--b);
+  background:
+    linear-gradient(  45deg,transparent var(--g),rgba(255,255,255,0.6) 0) right  /var(--c) 100%,
+    linear-gradient(-135deg,transparent var(--g),rgba(255,255,255,0.3) 0) bottom /100% var(--c),
+    conic-gradient(from -180deg at top var(--b) left var(--b),currentColor 270deg,transparent 0),
+    conic-gradient(from    0deg at bottom calc(var(--c) + var(--b)) right calc(var(--c) + var(--b)),currentColor 270deg,transparent 0) ;
+  background-repeat:no-repeat;
+  background-origin:border-box;
+  transform:translate(calc(var(--c)/1),calc(var(--c)/1));
+  clip-path: 
+    polygon(calc(100% - var(--c)) 0%, calc(100% - var(--c)) 0%, 
+    0% 0%, 
+    0% calc(100% - var(--c)),0% calc(100% - var(--c)),
+    calc(100% - var(--c)) calc(100% - var(--c)),
+    calc(100% - var(--c)) calc(100% - var(--c)));
+}
+.d-2:hover {
+  transform:translate(0,0);
+  clip-path: 
+    polygon(100% var(--c), calc(100% - var(--c)) 0%, 
+    0% 0%, 
+    0% calc(100% - var(--c)), var(--c) 100%, 
+    100% 100%,
+    100% 100%);
+}
+
+.d-3 {
+  --c:20px;  /* the cube perspective */
+  
+  --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+  
+  
+  padding:8px;
+  border: solid transparent;
+  border-width:0 var(--c) var(--c) 0;
+  background:
+    linear-gradient(  45deg,transparent var(--g),rgba(255,255,255,0.6) 0) right  /var(--c) 100%,
+    linear-gradient(-135deg,transparent var(--g),rgba(255,255,255,0.3) 0) bottom /100% var(--c);
+  background-repeat:no-repeat;
+  background-origin:border-box;
+  transition:0.3s,background-color 0.3s 0.3s,color 0.3s 0.3s;
+  transform:translate(calc(var(--c)/1),calc(var(--c)/1));
+  clip-path: 
+    polygon(calc(100% - var(--c)) 0%, calc(100% - var(--c)) 0%, 
+    0% 0%, 
+    0% calc(100% - var(--c)),0% calc(100% - var(--c)),
+    calc(100% - var(--c)) calc(100% - var(--c)),
+    calc(100% - var(--c)) calc(100% - var(--c)));
+}
+.d-3:hover {
+  transition:0.3s 0.3s,background-color 0.3s,color 0.3s;
+  background-color:black;
+  color:#fff;
+  transform:translate(0,0);
+  clip-path: 
+    polygon(100% var(--c), calc(100% - var(--c)) 0%, 
+    0% 0%, 
+    0% calc(100% - var(--c)), var(--c) 100%, 
+    100% 100%,
+    100% 100%);
+}
+.d-4 {
+  --c:20px;  /* the cube perspective */
+  
+  --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+  
+  padding:8px;
+  border: solid transparent;
+  border-width:0 0 var(--c) var(--c) ;
+  background:
+    linear-gradient(-45deg,transparent var(--g),rgba(255,255,255,0.6) 0) left   /var(--c) 100%,
+    linear-gradient(135deg,transparent var(--g),rgba(255,255,255,0.3) 0) bottom /100% var(--c);
+  background-repeat:no-repeat;
+  background-origin:border-box;
+  transition:0.3s,background-color 0.3s 0.3s,color 0.3s 0.3s;
+  transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
+  clip-path: 
+    polygon(var(--c) 0%, var(--c) 0%, 
+    100% 0%, 
+    100% calc(100% - var(--c)),100% calc(100% - var(--c)),
+    var(--c) calc(100% - var(--c)),
+    var(--c) calc(100% - var(--c)));
+}
+.d-4:hover {
+  transition:0.3s 0.3s,background-color 0.3s,color 0.3s;
+  background-color:blue;
+  color:#fff;
+  transform:translate(0,0);
+  clip-path: 
+    polygon(0% var(--c), var(--c) 0%, 
+    100% 0%, 
+    100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
+    0% 100%,0% 100%);
+}
+
+
+ .d-5 {
+   --d:14px; /* control the depth */
+   
+   padding:8px 8px 8px calc(8px + var(--d));
+   background:linear-gradient(rgba(255,255,255,0.4) 0 0) left/var(--d) 100% no-repeat;
+   clip-path:polygon(var(--d) 3px,var(--d) 0,100% 0,100% 100%,var(--d) 100%,var(--d) calc(100% - 3px));
+   transform:perspective(1000px) rotateY(0deg);
+   transition:0.4s,color 0.4s 0.4s,background-color 0.4s 0.4s;
+ }
+ .d-5:hover {
+   background-color:#000;
+   color:#fff;
+   clip-path:polygon(0px 3px,var(--d) 0,100% 0,100% 100%,var(--d) 100%,0  calc(100% - 3px));
+   transform:perspective(1000px) rotateY(40deg);
+   transition:0.4s,clip-path 0.4s 0.4s,transform 0.4s 0.4s;
+ }
+ 
+  .d-6 {
+   --d:14px; /* control the depth */
+   
+   padding:8px calc(8px + var(--d)) 8px 8px;
+   background:linear-gradient(rgba(255,255,255,0.4) 0 0) right/var(--d) 100% no-repeat;
+   clip-path:polygon(0 0,calc(100% - var(--d)) 0,calc(100% - var(--d)) 3px,calc(100% - var(--d)) calc(100% - 3px),calc(100% - var(--d)) 100%,0 100%); 
+   transform:perspective(1000px) rotateY(0deg);
+   transition:0.4s,color 0.4s 0.4s,background-color 0.4s 0.4s;
+ }
+ .d-6:hover {
+   background-color:blue;
+   color:#fff;
+   clip-path:polygon(0 0,calc(100% - var(--d)) 0,100% 3px,100% calc(100% - 3px),calc(100% - var(--d)) 100%,0 100%); 
+   transform:perspective(1000px) rotateY(-40deg);
+   transition:0.4s,clip-path 0.4s 0.4s,transform 0.4s 0.4s;
+ }
+ .d-7 {
+   --d:14px; /* control the depth */
+   
+   padding:8px 8px calc(8px + var(--d)) 8px;
+   background:linear-gradient(rgba(255,255,255,0.4) 0 0) bottom/100% var(--d) no-repeat;
+   clip-path:polygon(0 0,100% 0,100% calc(100% - var(--d)),calc(100% - 3px) calc(100% - var(--d)),3px calc(100% - var(--d)) ,0 calc(100% - var(--d))); 
+   transform:perspective(1000px) rotateX(0deg);
+   transition:0.4s,color 0.4s 0.4s,background-color 0.4s 0.4s;
+ }
+ .d-7:hover {
+   background-color:#000;
+   color:#fff;
+   clip-path:polygon(0 0,100% 0,100% calc(100% - var(--d)),calc(100% - 3px) 100%,3px 100% ,0 calc(100% - var(--d)));
+   transform:perspective(1000px) rotateX(40deg);
+   transition:0.4s,clip-path 0.4s 0.4s,transform 0.4s 0.4s;
+ }
+  .d-8 {
+   --d:14px; /* control the depth */
+   
+   padding:calc(8px + var(--d)) 8px 8px 8px;
+   background:linear-gradient(rgba(255,255,255,0.4) 0 0) top/100% var(--d) no-repeat;
+   clip-path:polygon(0 var(--d),3px var(--d),calc(100% - 3px) var(--d),100% var(--d),100% 100%,0 100%); 
+   transform:perspective(1000px) rotateX(0deg);
+   transition:0.4s,color 0.4s 0.4s,background-color 0.4s 0.4s;
+ }
+ .d-8:hover {
+   background-color:blue;
+   color:#fff;
+   clip-path:polygon(0 var(--d),3px 0,calc(100% - 3px) 0,100% var(--d),100% 100%,0 100%); 
+   transform:perspective(1000px) rotateX(-40deg);
+   transition:0.4s,clip-path 0.4s 0.4s,transform 0.4s 0.4s;
+ }
+
+
+/**/
+div[class] {
+  display:inline-block;
+  font-size:40px;
+  font-family:sans-serif;
+  margin:25px;
+  cursor:pointer;
+}
+
+body {
+  text-align:center;
+}
+<!--css button end-->
+	    
+
+	    
     </style>
   </head>
 
@@ -122,7 +347,16 @@
         <a href="#">
 	Pelanggan Yang terhormat, mohon maaf internet anda dalam masa isolir atau nonaktif, Lakukan 	pembayaran tagihan sebelum tanggal 10 Setiap bulanya.</a>
       </div>
-
+<h2>3D effects with one element and without pseudo element</h2>
+<div class="d-1">1. Pasang Baru </div>
+<div class="d-2">2. Hover me </div>
+<div class="d-3">3. Hover me </div>
+<div class="d-4">4. Hover me </div>
+<br>
+<div class="d-5">5. Hover me </div>
+<div class="d-6">6. Hover me </div>
+<div class="d-7">7. Hover me </div>
+<div class="d-8">8. Hover me </div>
 	
 
 
