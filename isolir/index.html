@@ -332,6 +332,29 @@ div[class] {
 body {
   text-align:center;
 }
+.button-container {
+    display: flex; /* Mengatur elemen di dalamnya sejajar secara horizontal */
+    justify-content: center; /* Memastikan tombol berada di tengah secara horizontal */
+    align-items: center; /* Menyelaraskan tombol secara vertikal */
+    gap: 10px; /* Memberikan jarak antar tombol */
+    flex-wrap: wrap; /* Membungkus tombol jika layar terlalu kecil */
+}
+
+.button-container div[class^="d-"] {
+    font-size: 14px; /* Ukuran teks kecil */
+    padding: 8px 12px; /* Padding untuk memperkecil ukuran tombol */
+    background-color: #f0f0f0; /* Warna latar belakang tombol */
+    border: 1px solid #ccc; /* Border tombol */
+    border-radius: 5px; /* Border melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi pointer */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    transition: background-color 0.3s ease; /* Efek transisi pada hover */
+}
+
+.button-container div[class^="d-"]:hover {
+    background-color: #007bff; /* Warna saat dihover */
+    color: #fff; /* Warna teks saat dihover */
+}	    
 /*<!--css button end-->*/
 	    
 
@@ -347,13 +370,15 @@ body {
         <a href="#">
 	Pelanggan Yang terhormat, mohon maaf internet anda dalam masa isolir atau nonaktif, Lakukan 	pembayaran tagihan sebelum tanggal 10 Setiap bulanya.</a>
       </div>
-<h2>Apa yang kamu cari</h2>
+	    
+<div class="button-container">
 <div class="d-1">
     <a href="http://rizki-tech.com/paket.html" target="_blank" style="text-decoration: none; color: inherit;">Pasang Baru</a>
 </div>
 <div class="d-2">Layanan WA</div>
 <div class="d-3">Layanan WEB</div>
 <div class="d-4">Daftar Paket</div>
+</div>
 
 	
 
